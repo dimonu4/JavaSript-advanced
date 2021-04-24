@@ -1,0 +1,37 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    max-width: 1140px;
+}
+
+header{
+    height: 50px;
+    background-color: lightgray;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;    
+}
+
+.btn-cart{
+    margin: 15px;
+    float: right;
+    border-radius: 5px;
+}
+
+.product-item{
+    width: 250px;
+    text-align: center;
+    background-color: rgb(206, 198, 198);
+}
+
+.by-btn{
+    margin-top: 1em;
+}
