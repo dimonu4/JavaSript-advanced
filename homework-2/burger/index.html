@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="#">
+    <p><h1>Соберите гамбургер</h1></p>
+    <fieldlist>
+        <legend><h3>Выберите размер гамбургера:</h3></legend>
+      
+        <input date-cost="100" date-call="40" id="sizeBig" type="radio" name="size" checked>
+        <label for="sizeBig">Большой</label><br>
+        <input date-cost="50" date-call="20" id="sizeSmall" type="radio" name="size">
+        <label for="sizeSmall">Маленький</label>
+    </fieldlist>
+    <fieldset>
+        <legend><h3>Начинка Гамбургера:</h3></legend>
+
+        <input date-cost="10" date-call="20" id="cheese" name="filling" type="radio" checked>
+        <label for="cheese">С сыром (</label><br>
+        <input date-cost="20" date-call="5" id="salad" name="filling" type="radio">
+        <label for="salad">С салатом (</label><br>
+        <input date-cost="15" date-call="10" id="potato" name="filling" type="radio">
+        <label for="potato">С картофелем</label>
+    </fieldset>
+    <fieldset>
+        <legend><h3>Дополнительные добавки:</h3></legend>
+       
+        <input date-cost="15" date-call="0" id="spice" type="checkbox">
+        <label for="spice">Приправа </label><br>
+        <input date-cost="20" date-call="5" id="sous" type="checkbox">
+        <label for="sous">Майонез</label>
+    </fieldset>
+    <button>Рассчитать</button> 
+    <div class="output"></div>
+   </form>
+   <script src="app.js"></script>
+</body>
+</html>
