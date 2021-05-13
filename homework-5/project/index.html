@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="logo">Интернет-магазин</div>
+        <div class="cart">
+            <form action="#" class="search-form">
+                <input type="text" class="search-field" v-model="searchLine">
+                <button class="btn-search" type="submit" v-on:click='FilterGoods'>
+                    <i class="fas fa-search" ></i>
+                </button>
+            </form>
+            <button class="btn-cart" type="button" v-on:click='CartVisibilty'>Корзина</button>
+            <div class="cart-block" v-if='isVisibleCart==true'>
+                <div class="cart-item" v-for="product of cart" :key="products.id_product" v-if='product.quantity>0'>
+                    <img :src="imgCatalog" alt="Some img">
+                    <div class="desc">
+                        <h3>{{product.product_name}}</h3>
+                        <p>{{product.price}}₽</p>
+                        <p>{{product.quantity}}</p>
+                        <p>{{product.quantity*product.price}}₽</p>
+                        <button class="buy-btn" @click="product.quantity+=1">Добавить</button>
+                        <button class="buy-btn" @click="product.quantity-=1">Удалить</button>
+                    </div>
+                </div>
+                <div v-if='isZero'>Нет данных</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div v-if='filtered.length==0&&filterClick==false' class="products">
+            <div class="product-item" v-for="product of products" :key="products.id_product">
+                <img :src="imgCatalog" alt="Some img">
+                <div class="desc">
+                    <h3>{{product.product_name}}</h3>
+                    <p>{{product.price}}₽</p>
+                    <button class="buy-btn" @click="addProduct(product)">Купить</button>
+                </div>
+            </div>
+        </div>
+            <div v-if='filtered.length!=0&&filterClick==true' class="products">
+                <div class="product-item" v-for="fproduct of filtered" :key="filtered.id_product">
+                    <img :src="imgCatalog" alt="Some img">
+                    <div class="desc">
+                        <h3>{{fproduct.product_name}}</h3>
+                        <p>{{fproduct.price}}₽</p>
+                        <button class="buy-btn" @click="addProduct(product)">Купить</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
