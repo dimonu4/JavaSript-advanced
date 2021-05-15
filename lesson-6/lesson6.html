@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 6 - Vue Components</title>
+</head>
+<body>
+<div id="app">
+    <div>
+        <button
+                v-for="tab in tabs"
+                @click="currentTab = tab"
+        >{{ tab }}</button>
+    </div>
+    <component :is="componentName"></component>
+<!--    <some-el-->
+<!--            :title="title"-->
+<!--            :counter="counter"-->
+<!--    >-->
+<!--    </some-el>-->
+<!--    <some-el-->
+<!--            :title="title"-->
+<!--            :counter="counter"-->
+<!--            :increase="increase"-->
+<!--    ></some-el>-->
+<!--    <some-el-->
+<!--            :title="title"-->
+<!--            :counter="counter"-->
+<!--    ></some-el>-->
+<!--    <some-el-->
+<!--            :title="title"-->
+<!--            :counter="counter"-->
+<!--            @increase="increase"-->
+<!--    ></some-el>-->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="components.js" type="module"></script>
+<script src="app.js"></script>
+</body>
+</html>
