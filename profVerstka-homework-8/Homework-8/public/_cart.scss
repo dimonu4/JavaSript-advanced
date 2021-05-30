@@ -1,0 +1,186 @@
+.section--intro--cart {
+  background-color: #f1e4e6;
+  width: 100%;
+  margin-top: 75px;
+}
+
+.section--cart {
+  margin-top: 75px;
+  padding: 0 18px;
+  .section__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    grid-template-rows: 272px auto;
+    grid-template-areas: "cards address" "cards total";
+    gap: 69px 128px;
+    .cart__cards {
+      grid-area: cards;
+      figure {
+        display: flex;
+        figcaption {
+          margin-left: 31px;
+          padding-top: 22px;
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 26px;
+
+          color: #575757;
+          .cart__heading {
+            margin-bottom: 42px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #222222;
+          }
+          .cart__price span {
+            color: #f16d7f;
+          }
+          .cart__quantity input {
+            font-size: 18px;
+            line-height: 22px;
+            color: #656565;
+            text-align: center;
+            border: 1px solid #eaeaea;
+          }
+        }
+      }
+      .cart__picture {
+        width: 263px;
+        height: auto;
+      }
+      .cart__buttons {
+        display: flex;
+        justify-content: space-between;
+        button {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          color: #000000;
+          padding: 16px 40px;
+          border: 1px solid #a4a4a4;
+          background: #ffffff;
+          text-transform: uppercase;
+          &:hover {
+            background: #f16d7f;
+            color: #ffffff;
+            transition: color, background 0.15s ease-in-out;
+          }
+        }
+      }
+    }
+    .cart__address {
+      box-sizing: border-box;
+      grid-area: address;
+      display: flex;
+      flex-direction: column;
+      button {
+        width: fit-content;
+      }
+    }
+    .cart__total {
+      grid-area: total;
+      padding: 40px 22px;
+      background: #f5f3f3;
+      height: 214px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart__card {
+      width: 100%;
+      height: 306px;
+      background: #ffffff;
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+      margin-bottom: 40px;
+      position: relative;
+      .close {
+        background-image: url(img/close.svg);
+        padding: 0;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        height: 12px;
+        border: none;
+        font-size: 12px;
+        text-align: center;
+        width: 12px;
+      }
+    }
+
+    .cart__address {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #222222;
+      h3 {
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      input {
+        padding: 15px;
+        margin-bottom: 20px;
+        &:last-of-type {
+          margin-bottom: 33px;
+        }
+      }
+      button {
+        font-size: 11px;
+        line-height: 13px;
+        color: #4a4a4a;
+        padding: 10px 14px;
+        background: #ffffff;
+        &:hover {
+          background: #f16d7f;
+          color: #ffffff;
+          transition: color, background 0.15s ease-in-out;
+        }
+      }
+    }
+
+    .cart__total {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+      text-align: right;
+      padding: 40px;
+      .cart_subtotal {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4a4a4a;
+        span {
+          padding-left: 15px;
+        }
+      }
+      .cart_grandtotal {
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        span {
+          padding-left: 15px;
+          color: #f16d7f;
+        }
+      }
+      button {
+        background: #f16d7f;
+        padding: 15px 40px;
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+}
+
+.section--subscribed--cart {
+  padding-top: 128px;
+}

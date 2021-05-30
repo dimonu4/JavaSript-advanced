@@ -1,0 +1,335 @@
+@media screen and (max-width: 768px) {
+  .section--intro {
+    height: 367px;
+  }
+
+  .top__image {
+    max-height: 367px;
+  }
+
+  .brand__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    color: #222222;
+    margin-bottom: 0;
+  }
+
+  .brand__p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #222222;
+    margin-bottom: 0;
+  }
+
+  .brand__wrapper {
+    width: 311px;
+  }
+
+  .section--advantages .section__wrapper {
+    flex-direction: column;
+  }
+
+  .section--subscribed .section__wrapper {
+    flex-direction: column;
+  }
+
+  .footer__wrapper {
+    padding: 0 32px;
+  }
+
+  .social-icons {
+    padding: 24px 0;
+  }
+
+  .section__wrapper {
+    &__deal {
+      padding-top: 20px;
+    }
+  }
+
+  .deals__row {
+    gap: 20px;
+    .deals__card {
+      height: 167px;
+      &.deal_img-1 {
+        background-position: top;
+      }
+      &.deal_img-2 {
+        background-position: top;
+      }
+      &.deal_img-3 {
+        background-position: top;
+      }
+    }
+    &--long {
+      .deals__card {
+        height: 116px;
+        margin: 20px 0;
+      }
+    }
+  }
+
+  // featured catalog
+
+  .section__wrapper.catalog {
+    padding-left: 16px;
+  }
+
+  .section--filters .section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+
+  .filter_column {
+    width: auto;
+  }
+
+  // featured product
+
+  .collection__box {
+    position: initial;
+    padding: 65px 105px;
+  }
+
+  // Featured cart
+  .section--cart {
+    margin-top: 59px;
+    .section__wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 272px;
+      gap: 64px 15px;
+      grid-template-areas: "cards cards" "address total";
+
+      .cart__cards .cart__buttons {
+        justify-content: center;
+        button {
+          text-transform: uppercase;
+          &:first-child {
+            margin-right: 48px;
+          }
+        }
+      }
+    }
+  }
+
+  // Featured registration
+
+  .section--registration {
+    padding: 64px 16px 96px 16px;
+
+    .section__wrapper {
+      .registration__information {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  .card__picture__catalog:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 730px) {
+  .section__wrapper {
+    &__index {
+      justify-content: center;
+    }
+  }
+
+  .intro__img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .brand__wrapper {
+    width: 263px;
+  }
+
+  .brand__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+    color: #222222;
+    margin-bottom: 0;
+  }
+
+  .brand__p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+    margin-bottom: 0;
+  }
+
+  .overlay .menu {
+    min-width: 100%;
+  }
+  .mobile_hiden {
+    display: none;
+  }
+
+  .footer__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .social-icons {
+    padding: 50px 0;
+  }
+
+  .section__wrapper {
+    justify-content: center;
+    &__deal {
+      padding-top: 64px;
+    }
+  }
+
+  .deals__row {
+    gap: 32px;
+    flex-direction: column;
+    padding: 0 15px;
+    .deals__card {
+      height: 247px;
+      &.deal_img-1 {
+        background-position: top;
+      }
+      &.deal_img-2 {
+        background-position: top;
+      }
+      &.deal_img-3 {
+        background-position: top;
+      }
+    }
+
+    &--long {
+      .deals__card {
+        height: 111px;
+        margin: 32px 0;
+      }
+    }
+  }
+
+  // featured catalog
+  .section__wrapper {
+    align-items: center;
+
+    &.catalog {
+      flex-direction: column;
+      padding-top: 24px;
+      padding-bottom: 46px;
+    }
+  }
+
+  .filter__main__summary .hide {
+    display: none;
+  }
+
+  .filter__summary:after {
+    content: "";
+    background-image: url(img/filter_icon_black.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    padding: 20px 20px;
+    margin-left: 11px;
+  }
+
+  .filter__main {
+    max-height: 24px;
+  }
+
+  // featured product
+
+  .collection__box {
+    position: initial;
+    padding: 65px 24px;
+  }
+
+  // Featured cart
+  .section--cart {
+    margin-top: 39px;
+    .section__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 272px auto;
+      gap: 48px 15px;
+      grid-template-areas: "cards" "address" "total";
+      .cart__cards {
+        .cart__card {
+          height: 167px;
+        }
+        figure {
+          figcaption {
+            margin-left: 31px;
+            padding-top: 12px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            .cart__heading {
+              margin-bottom: 25px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+            }
+            .cart__quantity input {
+              font-size: 10px;
+              line-height: 12px;
+            }
+            p {
+              margin-bottom: 4px;
+            }
+          }
+        }
+        .cart__picture {
+          width: 143px;
+        }
+        .cart__buttons {
+          button {
+            padding: 7px 16px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: none;
+            &:first-child {
+              margin-right: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section--subscribed--cart {
+    padding-top: 96px;
+  }
+
+  // featerud registration
+
+  .section--registration .section__wrapper {
+    display: flex;
+    flex-direction: column;
+    .registration__information {
+      width: 375px;
+      padding-top: 40px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+}
+
+@media screen and (max-width: 768px) and (min-width: 480.1px) {
+  .section--intro {
+    height: 367px;
+    padding-right: 34px;
+  }
+}
