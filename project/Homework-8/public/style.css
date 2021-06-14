@@ -1,3 +1,28 @@
+.error_block{
+  position: fixed;
+  top: 50%;
+  right:50%;
+  margin:auto auto;
+/* width: auto; */
+/* height:auto; */
+background-color: red;
+color: white;
+}
+
+.err_text{
+}
+
+.cart-items{
+  display:flex;
+  justify-content:space-around;
+  padding-bottom:5px;
+  border-bottom:1px solid #000000 ;
+}
+
+.cart-title{
+  margin: auto 0;
+}
+
 .collection__box {
   text-align: center;
   padding: 65px 292px;
@@ -457,6 +482,16 @@
 
 body {
   margin: 0;
+}
+
+.cart {
+  position: realtive;
+}
+
+.cart-block {
+  position: absolute;
+  width: 300px;
+  background-color: #ffffffff;
 }
 
 .cart__contaiener {

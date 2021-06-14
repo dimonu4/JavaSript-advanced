@@ -11,6 +11,17 @@
 body {
   margin: 0;
 }
+
+.cart{
+  position: realtive;
+}
+
+.cart-block{
+  position:absolute;
+  width:300px;
+  background-color:#ffffffff;
+}
+
 .cart__contaiener {
   padding: 60px 16px;
   .cart__header {
